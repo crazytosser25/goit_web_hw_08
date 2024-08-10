@@ -120,7 +120,7 @@ def main() -> None:
     match com:
         case "exit":
             print("Bye.")
-            sys.exit(1)
+            sys.exit(0)
         case "name":
             results = search_by_author(arg)
             if results:

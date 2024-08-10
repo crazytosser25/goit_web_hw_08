@@ -1,0 +1,10 @@
+services:
+  rabbit-service:
+    container_name: rabbitmq
+    image: rabbitmq:3.12.13-management
+    environment:
+      - RABBITMQ_DEFAULT_USER=user
+      - RABBITMQ_DEFAULT_PASS=secretpassword
+    ports:
+      - 5672:5672
+      - 9090:15672
